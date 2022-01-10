@@ -7,15 +7,79 @@
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="shortcut icon" type="image/x-icon" href="images/logo/favicon.ico?">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
   <!-- Loader -->
   <div id="loader"></div>
-  <h2>Trizentors</h2>
+  <!-- Move to up button -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- navgaition menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Trizentors</a></div>
+      <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#techstack">TechStack</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+      </ul>
+      <div class="media-icons">
+        <a href="https://github.com/Trizentor"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/_trizentors_/"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+<!-- Home Section Start -->
+ <section class="home" id="home">
+   <div class="home-content">
+     <div class="text">
+       <div class="text-one">Hello 👋,</div>
+       <div class="text-two">We're Trizentors</div>
+       <div class="text-three">Content Writter</div>
+     </div>
+   </div>
+ </section>
+
+<!-- Contact Me section Start -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact Me</span></div>
+      <div class="text">
+        <div class="topic">Have Any Project?</div>
+          <a class="btn github" href="https://github.com/Trizentor">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="btn whatsapp" href="https://api.whatsapp.com/send?phone=916383834784&amp;text=Hi there! I have a question :)">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a class="btn mobile" href="tel:+916383834784">
+            <i class="fas fa-mobile"></i>
+          </a>
+          <a class="btn instagram" href="https://www.instagram.com/_trizentors_/">
+            <i class="fab fa-instagram"></i>
+          </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="./JS/navbar.js"></script>
+  <script src="./JS/loader.js"></script>
+  <script> AOS.init({startEvent: 'load',});</script>
 </body>
+</html>
